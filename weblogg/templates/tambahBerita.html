@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - Tambah</title>
+    <link rel="stylesheet" href="{% static 'add-style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Tambah berita</h1>
+
+        <div class="inner-container">
+            <div class="field">
+                <label>Judul berita</label>
+                <input type="text" />
+            </div>
+            <div class="field">
+                <label>Tanggal berita</label>
+                <input type="text" />
+            </div>
+            <div class="field">
+                <label>Isi berita</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="button-area">
+                <button onclick="window.location.href='/'">Kembali</button>
+                <button>Tambahkan ke berita</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

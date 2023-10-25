@@ -1,0 +1,93 @@
+:root {
+    --card-max-height: 350px;
+    --card-padding-y: 2em;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.add-heading {
+    max-width: 500px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+button {
+    padding: 15px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    max-width: 500px;
+    overflow-y: hidden;
+    max-height: 80px;    
+    border: 1px solid #dededeee;
+    border-radius: 10px;
+    padding: var(--card-padding-y) 1em;
+    transition: max-height 1s ease-in;
+    display: grid;
+    gap: 30px;
+}
+.card.expanded {
+    height: max-content;
+    max-height: var(--card-max-height);
+    transition: max-height 1s ease-out
+}
+
+
+
+.card-headings {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-headings p:last-child {
+    color: gray;
+}
+
+.card-headings:hover {
+        cursor: pointer;
+    }
+    
+    
+.card .content-wrapper {
+    line-height: 1.7em;
+}
+
+
+.card.expanded .content-wrapper {
+    overflow-y: auto;
+    max-height: calc(var(--card-max-height) - 50px);
+    box-sizing: border-box;
+}

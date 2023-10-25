@@ -1,0 +1,59 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - Beranda</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Berita Terbaru</h1>
+        
+        <div class="add-heading">
+            <button onclick="window.location.href='tambah'">Tambah Berita</button>
+        </div>
+
+        <div class="card">
+            <div class="card-headings">
+                <p>Data Elektabilitas 3 Capres-Cawapres dari Berbagai Lembaga Survei</p>
+                <p>24 Oktober 2023</p>
+            </div>
+            <div class="content-wrapper">
+                <p>
+                    Menurut sejumlah lembaga survei sejak beberapa bulan lalu, pasangan Anies-Cak Imin memiliki elektabilitas paling rendah. 
+                    Sementara itu Ganjar-Mahfud bersaing ketat dengan Prabowo-Gibran.
+                    Survei dilakukan sepanjang 2-8 Oktober dan 16-18 Oktober 2023. Survei pertama dilakukan dengan melibatkan 1.620 responden. Margin of error kurang lebih 2,5 persen pada tingkat kepercayaan 95 persen.
+
+                    Survei kedua dilakukan dengan melibatkan 1.229 responden. Dipilih melalui proses pembangkitan nomor telepon secara acak yang sudah divalidasi, dan screening. 
+                    Margin of error survei diperkirakan ±2.9% 
+                    pada tingkat kepercayaan 95 persen, asumsi simple random sampling.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-headings">
+                <p>Resmi Daftar Capres Ketiga Kalinya, Ini Sumber Harta Prabowo</p>
+                <p>25 Oktober 2023</p>
+            </div>
+            <p>
+                Gerak-gerik Prabowo memang terus menjadi perhatian. Harta kekayaannya pun tengah disorot rakyat Indonesia.
+                Pasalnya, Prabowo Subianto menjadi bacapres terkaya dengan total harta kekayaan Rp2,04 triliun hingga 2022, berdasarkan Laporan Harta Kekayaan Penyelenggara Negara (LHKPN) per 31 Maret 2023.
+                Apabila dikurangi dengan hutang Rp8 miliar, harta kekayaan bacapres partai Gerindra itu mencapai Rp2,03 triliun.
+                Rinciannya, 10 bidang tanah dan bangunan sebesar Rp275,32 miliar, alat transportasi dan mesin (7 mobil dan 1 motor) Rp1,26 miliar, harta bergerak lainnya Rp16,41 miliar, kas dan setara kas Rp2,52 miliar, dan harta lainnya Rp45 miliar.
+                Kekayaan terbesar Ketua Umum partai Gerindra itu disimpan dalam bentuk surat berharga yang mencapai Rp1,70 triliun.
+                Pencalonan kali ini merupakan kesempatan keempat bagi Prabowo untuk menjadi calon presiden dan calon wakil presiden. Sebelumnya, Prabowo juga pernah mencalonkan diri sebagai calon presiden dua kali, dan sekali sebagai calon wakil presiden.
+            </p>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
